@@ -1,3 +1,5 @@
+@import "global.scss";
+
 .app{
     height: 100vh;
 
@@ -7,11 +9,11 @@
         background-color: lightskyblue;
         position: relative;
         top: 70px;
-        scroll-snap-type: y mandatory;
+        scroll-snap-type: y proximity;
         scroll-behavior: smooth;
         scrollbar-width: none;
-        &::-webkit-scrollbar{
-            display: none;
+        @include mobile{
+            height: auto;
         }
 
         > *{

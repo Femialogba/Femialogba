@@ -4,6 +4,13 @@ import Typewriter from "typewriter-effect";
 export default function Intro() {
   return (
     <div className="intro" id="intro">
+      <a href="#cv">
+        <img
+          class="bounce"
+          src={process.env.PUBLIC_URL + "/assets/scroll.svg"}
+          alt="scroll pointer"
+        />
+      </a>
       <div className="left">
         <div className="imgContainer">
           <img
@@ -14,7 +21,7 @@ export default function Intro() {
       </div>
       <div className="right">
         <div className="wrapper">
-          <h2>Nice to meet you</h2>
+          <h3>Nice to meet you</h3>
           <h1>I'm Femi</h1>
           <h3>
             Some of my interests are:
@@ -43,14 +50,19 @@ export default function Intro() {
             <span>femialogba1@gmail.com</span>
           </div>
         </div>
-        <a href="#cv">
-          <div class="bounce">
-            <img
-              src={process.env.PUBLIC_URL + "/assets/scroll.svg"}
-              alt="scroll pointer"
-            />
+        <div className="summary">
+            <h3>Summary</h3>
+            <h4> Technologies I use</h4>
+            <div className="body">
+            Python, JavaScript/TypeScript, HTML, CSS, algorithms and data
+            structures, Git, and Linux.
+            </div>
+            <h4>Full stack web experience</h4>
+            <div>
+              <p>Front-end: Next.js and React.js </p>
+              Backend: Flask, Django-REST-framework
+            </div>
           </div>
-        </a>
       </div>
     </div>
   );

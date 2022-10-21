@@ -1,16 +1,12 @@
 import "./cv.scss";
+const skills = [
+
+]
 
 export default function cv() {
   return (
     <div className="cv" id="cv">
-      <a href="#projects">
-        <div class="bounce">
-          <img
-            src={process.env.PUBLIC_URL + "/assets/scroll.svg"}
-            alt="scroll pointer"
-          />
-        </div>
-      </a>
+
       <div className="education section">
         <h1>Education</h1>
         <table>
@@ -31,54 +27,19 @@ export default function cv() {
           </tr>
         </table>
       </div>
-
-      <div class="skills section">
-        <h1>Technical Skills</h1>
-        <h2>Languages</h2>
-        <div className="list">
-          <div>
-            {" "}
-          </div>
-          <img src={process.env.PUBLIC_URL + "/assets/python.svg"} alt="" />
-          <div className="text">Python</div>
-
-          <img src={process.env.PUBLIC_URL + "/assets/java.svg"} alt="" />
-          <div className="text">Java</div>
-
-          <img src={process.env.PUBLIC_URL + "/assets/js.svg"} alt="" />
-          <div className="text">Javascript</div>
-
-          <img src={process.env.PUBLIC_URL + "/assets/html5.svg"} alt="" />
-          <div className="text">HTML</div>
-        </div>
-        <h2>Design Tools</h2>
-        <div className="list">
-          <div>
-            {" "}
-          </div>
-          <img src={process.env.PUBLIC_URL + "/assets/ai.svg"} alt="" />
-          <div className="text">Illustrator</div>
-
-          <img src={process.env.PUBLIC_URL + "/assets/id.svg"} alt="" />
-          <div className="text">InDesign</div>
-
-          <img src={process.env.PUBLIC_URL + "/assets/ae.svg"} alt="" />
-          <div className="text">After Effects</div>
-
-          <img src={process.env.PUBLIC_URL + "/assets/xd.svg"} alt="" />
-          <div className="text">Adobe XD</div>
-        </div>
-      </div>
       <div className="education section">
         <h1>Work Experience</h1>
-        <table >
+        <table>
           <tr>
             <th>Organisation</th>
             <th>Role</th>
             <th>Duration</th>
           </tr>
           <tr>
-            <td> <a href="https://sedmichael.com"> Sed Michael Design </a></td>
+            <td>
+              {" "}
+              <a href="https://sedmichael.com"> Sed Michael Design </a>
+            </td>
             <td>Designer and Founder</td>
             <td>2021 - 2022</td>
           </tr>
@@ -94,6 +55,13 @@ export default function cv() {
           </tr>
         </table>
       </div>
+      <a href="#projects">
+        <img
+          class="bounce"
+          src={process.env.PUBLIC_URL + "/assets/scroll.svg"}
+          alt="scroll pointer"
+        />
+      </a>
     </div>
   );
 }
