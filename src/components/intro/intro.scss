@@ -1,7 +1,13 @@
 @import "../../global.scss";
 
 .intro {
-  background-color: #dbefff;
+  background: rgb(250, 238, 255);
+  background: radial-gradient(
+    circle,
+    rgba(250, 238, 255, 1) 0%,
+    rgba(227, 247, 251, 1) 61%,
+    rgba(252, 255, 238, 1) 100%
+  );
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,30 +87,43 @@
     @include mobile {
       align-items: center;
       flex: auto;
-      justify-content: space-between;
+      justify-content: space-around;
     }
-    .summary {
+    .wrap {
       padding-left: 15%;
+      padding-top: 30px;
       @include mobile {
-        padding-left: 0;
+        padding: 0 20px;
+      }
+      .summary {
+        padding: 10px 10px 30px 30px;
+        background-color: white;
+        width: 320px;
+        height: 200px;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        width: 50%;
-        justify-content: center;
-      }
-      .body {
-        width: 280px;
-        margin-bottom: 10px;
-        text-align: center;
-      }
-      @include mobile {
-        flex: auto;
-        align-items: center;
-        justify-content: space-evenly;
-        padding-top: 5px;
-        width: 100%;
-        font-size: 14px;
+        justify-content: space-around;
+        border-radius: 20px;
+        @include mobile {
+          align-items: center;
+          padding: 0;
+          width: 320px;
+        }
+        .body {
+          width: 100%;
+          margin-bottom: 10px;
+          @include mobile {
+            text-align: center;
+          }
+        }
+        @include mobile {
+          flex: auto;
+          align-items: center;
+          justify-content: space-evenly;
+          padding-top: 5px;
+          width: 100%;
+          font-size: 14px;
+        }
       }
     }
     .wrapper {

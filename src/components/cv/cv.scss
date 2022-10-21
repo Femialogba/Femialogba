@@ -1,7 +1,12 @@
 @import "../../global.scss";
 .cv {
-  background-color: rgb(255, 218, 204);
-  color: $mainColor;
+  background: rgb(250, 238, 255);
+  background: radial-gradient(
+    circle,
+    rgba(250, 238, 255, 1) 0%,
+    rgba(227, 247, 251, 1) 61%,
+    rgba(252, 255, 238, 1) 100%
+  );  color: $mainColor;
   display: flex;
   align-items: center;
   flex-direction: column;

@@ -50,6 +50,7 @@ export default function Intro() {
             <span>femialogba1@gmail.com</span>
           </div>
         </div>
+        <div className="wrap">
         <div className="summary">
           <h3>Summary</h3>
           <div>
@@ -67,6 +68,7 @@ export default function Intro() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

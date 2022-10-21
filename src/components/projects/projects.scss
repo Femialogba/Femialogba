@@ -1,7 +1,13 @@
 @import "../../global.scss";
 
 .projects {
-  background-color: wheat;
+  background: rgb(250, 238, 255);
+  background: radial-gradient(
+    circle,
+    rgba(250, 238, 255, 1) 0%,
+    rgba(227, 247, 251, 1) 61%,
+    rgba(252, 255, 238, 1) 100%
+  );
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,6 +136,8 @@
             max-height: 80%;
             border-radius: 20px;
             object-fit: cover;
+            box-shadow: 2px 2px 5px #aaaaaa;
+
             @include mobile {
               border-radius: 10px;
             }
