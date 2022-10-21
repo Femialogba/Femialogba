@@ -2,7 +2,7 @@
 
 .app{
     height: 100vh;
-
+    
     .sections {
         width: 100%;
         height: calc(100vh - 70px);
@@ -13,13 +13,18 @@
         scroll-behavior: smooth;
         scrollbar-width: none;
         @include mobile{
-            height: auto;
+            height: max-content;
         }
 
         > *{
             width: 100vw;
             height: calc(100vh - 70px);
             scroll-snap-align: start;
+            @include mobile{
+
+                min-height: calc(100vh - 70px);
+                height: max-content;
+            }
 
         }
     }

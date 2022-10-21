@@ -51,18 +51,22 @@ export default function Intro() {
           </div>
         </div>
         <div className="summary">
-            <h3>Summary</h3>
+          <h3>Summary</h3>
+          <div>
             <h4> Technologies I use</h4>
             <div className="body">
-            Python, JavaScript/TypeScript, HTML, CSS, algorithms and data
-            structures, Git, and Linux.
+              Python, JavaScript/TypeScript, HTML, CSS, algorithms and data
+              structures, Git, and Linux.
             </div>
+          </div>
+          <div>
             <h4>Full stack web experience</h4>
             <div>
               <p>Front-end: Next.js and React.js </p>
               Backend: Flask, Django-REST-framework
             </div>
           </div>
+        </div>
       </div>
     </div>
   );

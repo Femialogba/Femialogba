@@ -8,7 +8,7 @@ export default function cv() {
     <div className="cv" id="cv">
 
       <div className="education section">
-        <h1>Education</h1>
+        <h4>Education</h4>
         <table>
           <tr>
             <th>University</th>
@@ -28,7 +28,7 @@ export default function cv() {
         </table>
       </div>
       <div className="education section">
-        <h1>Work Experience</h1>
+        <h4>Work Experience</h4>
         <table>
           <tr>
             <th>Organisation</th>
@@ -55,6 +55,7 @@ export default function cv() {
           </tr>
         </table>
       </div>
+      <h4 className="education section">Browse some of my projects below</h4>
       <a href="#projects">
         <img
           class="bounce"
