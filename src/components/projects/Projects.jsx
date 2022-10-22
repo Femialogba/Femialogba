@@ -16,6 +16,19 @@ export default function Works() {
   };
   return (
     <div className="projects" id="projects">
+      <a href="#intro">
+        <img
+          class="scroll"
+          src={process.env.PUBLIC_URL + "/assets/scroll2.svg"}
+          alt="scroll pointer"
+        />
+      </a>
+      <h1 className="title">Projects</h1>
+      <img
+        className="background"
+        src={process.env.PUBLIC_URL + "/assets/background.svg"}
+        alt=""
+      />
       <div
         className="slider"
         style={{ transform: `translateX(${-currentSlide * 100}vw)` }}

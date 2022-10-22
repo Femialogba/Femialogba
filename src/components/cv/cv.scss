@@ -1,35 +1,35 @@
 @import "../../global.scss";
 .cv {
-  background: rgb(250, 238, 255);
-  background: radial-gradient(
-    circle,
-    rgba(250, 238, 255, 1) 0%,
-    rgba(227, 247, 251, 1) 61%,
-    rgba(252, 255, 238, 1) 100%
-  );  color: $mainColor;
+  background: $darkColor;
+  color: $mainColor;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
   position: relative;
   @include mobile{
-    height: auto;
+    height: fit-content;
+  }
+  .illo{
+    width: 50vw;
+    opacity: 0.2;
+    mix-blend-mode: difference;
+    @include mobile{
+      width: 80vw;
+    }
   }
   .bounce {
     position: absolute;
     bottom: 10px;
-    left: 50%;
+    left: 49.2%;
     width: 30px;
     height: 20px;
     @include mobile {
       display: none;
     }
   }
-  h4 {
-    font-size: 21px;
-    @include mobile {
-      text-align: center;
-    }
+  h1{
+    color: rgb(231, 244, 255);
   }
   .education {
     text-align: center;
@@ -38,22 +38,23 @@
     table {
       border-collapse: collapse;
       font-size: 20px;
-      margin-top: 20px;
+      margin: 20px;
       min-width: 700px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      border-radius: 20px;
+      overflow: hidden;
       @include mobile {
-        overflow-x: auto;
+        border-radius: 10px;
         width: 300px;
         min-width: 280px;
         font-size: 16px;
         margin-top: 10px;
       }
       tr {
-        background-color: #ffffff;
+        background: rgba(255,255,255,1);
         th {
           background-color: $mainColor;
           color: #ffffff;
-          text-align: left;
           font-weight: 500;
           font-size: 25px;
           @include mobile {
@@ -69,7 +70,7 @@
         }
       }
       tr:nth-of-type(even) {
-        background-color: #f3f3f3;
+        background: rgba(240, 244, 255, 1);
       }
       tr:last-of-type {
         border-bottom: 2px solid $secondary;

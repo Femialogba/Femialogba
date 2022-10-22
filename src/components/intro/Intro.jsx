@@ -11,6 +11,7 @@ export default function Intro() {
           alt="scroll pointer"
         />
       </a>
+      <img className="hero" src={process.env.PUBLIC_URL + "/assets/hero-bg.png"} alt="" />
       <div className="left">
         <div className="imgContainer">
           <img

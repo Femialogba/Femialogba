@@ -6,9 +6,9 @@ const skills = [
 export default function cv() {
   return (
     <div className="cv" id="cv">
-
+      <img className="illo" src={process.env.PUBLIC_URL + "/assets/CV.svg"} alt="" />
       <div className="education section">
-        <h4>Education</h4>
+        <h1>Education</h1>
         <table>
           <tr>
             <th>University</th>
@@ -22,13 +22,13 @@ export default function cv() {
           </tr>
           <tr>
             <td>University of Lagos</td>
-            <td>Bachelor of Science in Civil Engineering </td>
+            <td>Bachelor's in Civil Engineering </td>
             <td>2018</td>
           </tr>
         </table>
       </div>
       <div className="education section">
-        <h4>Work Experience</h4>
+        <h1>Work Experience</h1>
         <table>
           <tr>
             <th>Organisation</th>
@@ -37,7 +37,6 @@ export default function cv() {
           </tr>
           <tr>
             <td>
-              {" "}
               <a href="https://sedmichael.com"> Sed Michael Design </a>
             </td>
             <td>Designer and Founder</td>
@@ -55,7 +54,6 @@ export default function cv() {
           </tr>
         </table>
       </div>
-      <h4 className="education section">Browse some of my projects below</h4>
       <a href="#projects">
         <img
           class="bounce"
