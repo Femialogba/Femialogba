@@ -79,8 +79,8 @@
       justify-content: center;
       float: right;
       @include mobile {
-        width: 300px;
-        height: 300px;
+        min-width: 45vh;
+        min-height: 45vh;
       }
       img {
         height: 90%;
@@ -120,13 +120,11 @@
           align-items: center;
           padding: 10px;
           width: 320px;
+          height: 150px;
         }
         .body {
           width: 280px;
           margin-bottom: 10px;
-          @include mobile {
-            text-align: center;
-          }
         }
         @include mobile {
           flex: auto;

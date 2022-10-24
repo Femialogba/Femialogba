@@ -2,7 +2,7 @@
 
 .projects {
   background: white;
-  color: rgb(66, 66, 66);
+  color: $darkColor;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,6 +55,7 @@
       margin-top: 20px;
       top: unset;
       position: relative;
+      font-size: 28px;
     }
   }
   .background{

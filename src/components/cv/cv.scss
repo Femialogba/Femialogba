@@ -30,6 +30,9 @@
   }
   h1{
     color: rgb(231, 244, 255);
+    @include mobile{
+      font-size: 28px;
+    }
   }
   .education {
     text-align: center;
