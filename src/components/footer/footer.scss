@@ -1,30 +1,90 @@
-@import "global.scss";
-
-.social-footer {
-    height: 100px;
-    width: 100%;
-    padding: 1rem;
-    background: $darkColor;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-  
-    .social-footer-icons {
-      li:last-of-type {
-        margin-right: 0;
+@import "../../global.scss";
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+body {
+  color: #fff;
+  background-color: $darkColor;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+h4 {
+  margin: 1% 0 1% 0;
+  font-size: 1.4em;
+}
+h5 {
+  margin: 1% 0 1% 0;
+  font-size: 1em;
+  color: rgb(86, 86, 109);
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+#footer{
+  height: 150px;
+  min-height:100px;
+  overflow: hidden;
+}
+.footer-social-icons {
+  padding: 50px 100px;
+  width: 350px;
+  display: block;
+  margin: 0 auto;
+  @include mobile{
+    padding: 50px;
+  }
+  .social-icons {
+    margin-top: 10px;
+    li {
+      vertical-align: middle;
+      display: inline;
+      height: 100px;
+    }
+    .social-icon {
+      color: #fff;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .fa-facebook {
+      &:hover {
+        background-color: #3d5b99;
       }
-  
-      .fa {
-        font-size: 1.3rem;
-        color: $white;
-  
-        &:hover {
-          color: darken($dark-gray, 25%);
-          transition: color 0.3s ease-in;
-        }
+    }
+    .fa-twitter {
+      padding: 10px 12px;
+      &:hover {
+        background-color: #00aced;
+      }
+    }
+    .fa-rss {
+      padding: 10px 14px;
+      &:hover {
+        background-color: #eb8231;
+      }
+    }
+    .fa-github {
+      padding: 10px 14px;
+      &:hover {
+        background-color: #5a32a3;
+      }
+    }
+    .fa-youtube {
+      padding: 10px 14px;
+      &:hover {
+        background-color: #e64a41;
+      }
+    }
+    .fa-linkedin {
+      padding: 10px 14px;
+      &:hover {
+        background-color: #0073a4;
       }
     }
   }
-  
-  
+}

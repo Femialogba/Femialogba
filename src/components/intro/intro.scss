@@ -111,7 +111,6 @@
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         -webkit-backdrop-filter: blur(6.7px);
         width: 320px;
-        height: 200px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -120,7 +119,7 @@
           align-items: center;
           padding: 10px;
           width: 320px;
-          height: 150px;
+          min-height: 150px;
         }
         .body {
           width: 280px;

@@ -28,7 +28,7 @@ export default function Intro() {
             Some of my interests are:
             <Typewriter
               options={{
-                strings: ["Software Engineering", "Machine Learning", "Design"],
+                strings: ["Software Engineering", "Web development","Design"],
                 autoStart: true,
                 delay: 50,
                 loop: true,
