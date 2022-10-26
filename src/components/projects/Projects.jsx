@@ -39,7 +39,7 @@ export default function Works() {
               <div className="left">
                 <div className="leftContainer">
                   <div className="imgContainer">
-                    <a href={d.link}>
+                    <a href={d.github}>
                       <img src={process.env.PUBLIC_URL + d.icon} alt="" />
                     </a>
                   </div>
