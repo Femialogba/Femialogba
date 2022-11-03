@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/fmlog/static/css/main.70ec6807.css",
-    "main.js": "/fmlog/static/js/main.812f6b42.js",
+    "main.js": "/fmlog/static/js/main.61f68653.js",
     "index.html": "/fmlog/index.html",
     "main.70ec6807.css.map": "/fmlog/static/css/main.70ec6807.css.map",
-    "main.812f6b42.js.map": "/fmlog/static/js/main.812f6b42.js.map"
+    "main.61f68653.js.map": "/fmlog/static/js/main.61f68653.js.map"
   },
   "entrypoints": [
     "static/css/main.70ec6807.css",
-    "static/js/main.812f6b42.js"
+    "static/js/main.61f68653.js"
   ]
 }
