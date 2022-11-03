@@ -15,13 +15,13 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
         <div className="right">
           <ul className="links">
             <li>
-              <a href="#intro">Home</a>
+              <a className="link" href="#intro">Home</a>
+            </li>
+            <li >
+              <a className="link" href="#cv">Cv</a>
             </li>
             <li>
-              <a href="#cv">Cv</a>
-            </li>
-            <li>
-              <a href="#projects">Projects</a>
+              <a className="link" href="#projects">Projects</a>
             </li>
           </ul>
           <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>

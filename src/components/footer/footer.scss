@@ -5,10 +5,6 @@ body {
   color: #fff;
   background-color: $darkColor;
 }
-a {
-  text-decoration: none;
-  color: #fff;
-}
 h4 {
   margin: 1% 0 1% 0;
   font-size: 1.4em;
@@ -22,9 +18,9 @@ ul {
   padding: 0;
   list-style: none;
 }
-#footer{
+#footer {
   height: 150px;
-  min-height:100px;
+  min-height: 100px;
   overflow: hidden;
 }
 .footer-social-icons {
@@ -32,7 +28,7 @@ ul {
   width: 350px;
   display: block;
   margin: 0 auto;
-  @include mobile{
+  @include mobile {
     padding: 50px;
   }
   .social-icons {
@@ -46,8 +42,6 @@ ul {
       color: #fff;
       -webkit-transition: 0.5s;
       transition: 0.5s;
-    }
-    a {
       color: #fff;
       text-decoration: none;
     }

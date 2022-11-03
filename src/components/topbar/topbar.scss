@@ -10,7 +10,7 @@
   z-index: 3;
   transition: all 1s ease;
   overflow: hidden;
-  
+
   .wrapper {
     padding: 10px 100px;
     display: flex;
@@ -49,20 +49,31 @@
 
     .right {
       .links {
+        .link {
+          color: #fff;
+          text-decoration: none;
+          &:hover {
+            color: $secondary;
+            text-decoration: underline;
+          }
+        }
         li {
           vertical-align: middle;
           display: inline;
           height: 100px;
           margin-right: 50px;
-          @include mobile{
+          @include mobile {
             display: none;
           }
         }
+        li:hover {
+          color: $secondary;
+          text-decoration: none;
+        }
         li:last-child {
-            margin-right: 0;
+          margin-right: 0;
         }
       }
-
       .hamburger {
         width: 32px;
         height: 25px;
