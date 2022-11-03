@@ -39,17 +39,17 @@ export default function cv() {
             <td>
               <a href="https://sedmichael.com"> Sed Michael Design </a>
             </td>
-            <td>Designer and Founder</td>
+            <td>Web Developer and Founder</td>
             <td>2021 - 2022</td>
           </tr>
           <tr>
             <td>BAT Lagos Office</td>
-            <td>Communications designer</td>
+            <td>Communications Designer</td>
             <td>2019 - 2021</td>
           </tr>
           <tr>
             <td>Relatables Consulting</td>
-            <td>Communications designer</td>
+            <td>Web Developer/Designer</td>
             <td>2019 - 2020</td>
           </tr>
         </table>
