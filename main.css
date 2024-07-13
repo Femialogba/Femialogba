@@ -22,6 +22,9 @@ body {
 ::-webkit-scrollbar {
     display: none;
 }
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
 h4 {
     margin: 1% 0 1% 0;
     font-size: 1.4em;
@@ -63,6 +66,9 @@ a {
     100% {
         opacity: 0;
     }
+}
+.mt-2{
+    margin-top: 1rem;
 }
 
 /*Typewriter*/
@@ -532,6 +538,9 @@ a {
     .p6 {
         grid-column: span 1 !important;
     }
+    .illo-container{
+        grid-auto-rows: 75px;
+    }
 }
 @media (min-width: 900px) {
     .illo-container {
@@ -750,7 +759,6 @@ a {
     /* Projects Section*/
     .projects {
         height: max-content;
-        justify-content: space-around;
     }
     .projects .arrow {
         display: none;
@@ -803,7 +811,12 @@ a {
         border-radius: 10px;
         height: 90%;
     }
+
     /* Footer Section*/
+    #footer {
+        min-height: unset;
+        height: unset;
+    }
     .footer-social-icons {
         padding: 30px;
     }
@@ -932,7 +945,6 @@ a {
     /* Projects Section*/
     .projects {
         height: max-content;
-        justify-content: space-around;
     }
     .projects .arrow {
         display: none;
