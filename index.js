@@ -1,4 +1,9 @@
-const TYPE_WRITER_STRS = ['Software Engineering', 'Web development', 'Art & Illustration', 'Design'];
+const TYPE_WRITER_STRS = [
+    'Software Engineering',
+    'Web development',
+    'Art & Illustration',
+    'Design',
+];
 const TYPING_SPEED = 100;
 const DELAY_BTW_STRS = 3000;
 const PROJECTS = [
@@ -35,7 +40,7 @@ const ILLOS = [
     {
         id: 'p1',
         title: 'Virgil Abloh',
-        desc: "Virgil Abloh Illustration",
+        desc: 'Virgil Abloh Illustration',
         img: './assets/Virgil.jpg',
     },
     {
@@ -145,8 +150,6 @@ function addIllosToDOM() {
             </div>
         `;
         grid.innerHTML += illoStr;
-
-        // 
     }
 }
 
@@ -182,7 +185,6 @@ function type() {
     }
 }
 
-
 addProjectsToDOM();
 addIllosToDOM();
 type();
@@ -196,6 +198,6 @@ document.getElementById('RightSliderArrow').addEventListener('click', function (
 
 document.getElementById('hamburgerId').addEventListener('click', () => setMenuOpen(true));
 
-document.getElementById('MenuLinks').childNodes.forEach((link) => {
+document.getElementById('MenuLinks').childNodes.forEach(function (link) {
     link.addEventListener('click', () => setMenuOpen(false));
 });
