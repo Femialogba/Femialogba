@@ -65,6 +65,46 @@ a {
     }
 }
 
+/*Typewriter*/
+.typewriter__cursor {
+    animation: typewriter-cursor 1s infinite;
+    margin-left: 1px;
+}
+
+/*Arrows/Scroll Icons etc.*/
+.arrow {
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+}
+.arrow.left {
+    left: 100px;
+    transform: rotateY(180deg);
+}
+.arrow.right {
+    right: 100px;
+}
+.scroll-wrapper {
+    width: 50px;
+    height: 70px;
+}
+.scroll-bounce {
+    position: absolute;
+    top: 10px;
+    left: 49.2%;
+    width: 30px;
+    height: 20px;
+    transform: rotateY(90deg);
+    animation: bounce 2s infinite;
+}
+.scroll {
+    position: absolute;
+    bottom: 10px;
+    left: 49.2%;
+    width: 30px;
+    height: 20px;
+}
+
 /* Header/Nav */
 .topbar {
     width: 100%;
@@ -228,7 +268,6 @@ a {
     width: 100vw;
     object-fit: fill;
 }
-
 .intro h1 {
     font-size: 60px;
     color: var(--pry-color);
@@ -372,38 +411,6 @@ a {
     position: relative;
     height: 100%;
 }
-.arrow {
-    height: 40px;
-    position: absolute;
-    cursor: pointer;
-}
-.arrow.left {
-    left: 100px;
-    transform: rotateY(180deg);
-}
-.arrow.right {
-    right: 100px;
-}
-.scroll-wrapper {
-    width: 50px;
-    height: 70px;
-}
-.scroll-bounce {
-    position: absolute;
-    top: 10px;
-    left: 49.2%;
-    width: 30px;
-    height: 20px;
-    transform: rotateY(90deg);
-    animation: bounce 2s infinite;
-}
-.scroll {
-    position: absolute;
-    bottom: 10px;
-    left: 49.2%;
-    width: 30px;
-    height: 20px;
-}
 .projects .title {
     position: relative;
     top: -270px;
@@ -419,7 +426,6 @@ a {
     left: 0;
     transition: all 1s ease-out;
 }
-
 .projects .slider .container {
     width: 100vw;
     display: flex;
@@ -497,6 +503,7 @@ a {
     border-radius: 15px;
     object-fit: cover;
 }
+/* Illustrations Section*/
 .illustrations {
     display: flex;
     align-items: center;
@@ -622,11 +629,6 @@ a {
 .footer-social-icons .social-icons .fa-linkedin:hover {
     background-color: #0073a4;
 }
-/*Typewriter*/
-.typewriter__cursor {
-    animation: typewriter-cursor 1s infinite;
-    margin-left: 1px;
-}
 
 /* Mobile*/
 @media (max-width: 767px) {
@@ -654,10 +656,13 @@ a {
     /* Sections wrapper*/
     .sections {
         height: max-content;
+        scroll-snap-type: unset;
+        scroll-behavior: unset;
     }
     .sections > * {
         min-height: calc(100vh - 70px);
         height: max-content;
+        scroll-snap-align: unset;
     }
     /* Intro Section*/
     .intro {
@@ -842,10 +847,13 @@ a {
     /* Sections wrapper*/
     .sections {
         height: max-content;
+        scroll-snap-type: unset;
+        scroll-behavior: unset;
     }
     .sections > * {
         min-height: calc(100vh - 70px);
         height: max-content;
+        scroll-snap-align: unset;
     }
     /* Intro Section*/
     .intro {
