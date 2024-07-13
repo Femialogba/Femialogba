@@ -1,0 +1,172 @@
+@import "../../global.scss";
+
+.intro {
+  background: rgb(250, 238, 255);
+  background: radial-gradient(
+    circle,
+    rgba(250, 238, 255, 1) 0%,
+    rgba(227, 247, 251, 1) 61%,
+    rgba(252, 255, 238, 1) 100%
+  );
+  color: $darkColor;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  @include mobile {
+    flex-direction: column;
+  }
+  .hero{
+    position: absolute;
+    z-index: -5;
+    height: calc(100vh - 70px);
+    width: 100vw;
+    object-fit: fill;
+  }
+  .bounce {
+    position: absolute;
+    bottom: 10px;
+    left: 49.2%;
+    width: 30px;
+    height: 20px;
+    @include mobile {
+      display: none;
+    }
+  }
+  h1 {
+    font-size: 60px;
+    color: $mainColor;
+    @include mobile {
+      font-size: 40px;
+    }
+  }
+  h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: 400;
+    @include mobile {
+      font-size: 18px;
+      display: none;
+    }
+    span {
+      font-weight: 700;
+    }
+  }
+  h4 {
+    font-size: 21px;
+    @include mobile {
+      text-align: center;
+    }
+  }
+  .left {
+    flex: 0.5;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mobile {
+      flex: auto;
+    }
+    .imgContainer {
+      width: 40vw;
+      height: 40vw;
+      background-color: $secondary;
+      border-radius: 50%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      float: right;
+      @include mobile {
+        min-width: 45vh;
+        min-height: 45vh;
+      }
+      img {
+        height: 90%;
+      }
+    }
+  }
+  .right {
+    flex: 0.4;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    @include mobile {
+      align-items: center;
+      flex: 0.5;
+      justify-content: space-around;
+    }
+    .wrap {
+      padding-left: 15%;
+      padding-top: 30px;
+      @include mobile {
+        padding: 0 20px;
+        padding-left: 0;
+      }
+      .summary {
+        padding: 10px 10px 30px 30px;
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(6.7px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        -webkit-backdrop-filter: blur(6.7px);
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 20px;
+        @include mobile {
+          align-items: center;
+          padding: 10px;
+          width: 320px;
+          min-height: 150px;
+        }
+        .body {
+          width: 280px;
+          margin-bottom: 10px;
+        }
+        @include mobile {
+          flex: auto;
+          align-items: center;
+          justify-content: space-evenly;
+          padding-top: 5px;
+          width: 100%;
+          font-size: 14px;
+        }
+      }
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      padding-left: 15%;
+      @include mobile {
+        padding-left: 0;
+        align-items: center;
+      }
+      .links {
+        margin-top: 40px;
+        height: 50px;
+        position: relative;
+        @include mobile {
+          margin-top: 10px;
+          height: 40px;
+        }
+        img {
+          height: 90%;
+          margin-right: 20px;
+          @include mobile {
+            margin-right: 10px;
+          }
+        }
+        span {
+          position: absolute;
+          font-size: 20px;
+          top: 10px;
+          @include mobile {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
