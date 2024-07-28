@@ -130,7 +130,7 @@ function addProjectsToDOM() {
                   </div>
                 </div>
                 <div class="right">
-                    <img src=${project.img} alt=${project.desc} />
+                    <img src=${project.img} alt=${project.desc} loading="lazy"/>
                 </div>
               </div>
             </div>
@@ -145,7 +145,7 @@ function addIllosToDOM() {
     for (const illo of ILLOS) {
         const illoStr = `
             <div class="illo-item ${illo.id}">
-                <img src=${illo.img} alt=${illo.desc}>
+                <img src=${illo.img} alt=${illo.desc} loading="lazy">
                 <div class="image-title"><h2>${illo.title}</h2></div>
             </div>
         `;
