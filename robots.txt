@@ -1,2 +1,3 @@
-User-agent: Googlebot
-Disallow: /
+User-agent: *
+Disallow:
+Sitemap: https://fmlog.github.io/sitemap.xml
