@@ -24,7 +24,7 @@ const PROJECTS = [
         desc: 'For my dissertation, I developed a RESTful Autograder web application (automatic grading of programming assignment using test cases) that can be integrated into LMS (e.g., Canvas) using REST API.',
         img: './assets/autograder-2.png',
         github: 'https://github.com/fmlog/Autograder-v2',
-        link: 'https://github.com/fmlog/Autograder-v2',
+        link: 'https://fmlog.github.io/Autograder-v2/',
     },
     {
         id: '4',
