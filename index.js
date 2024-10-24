@@ -123,14 +123,14 @@ function addProjectsToDOM() {
                         <img src=${project.icon} alt="" />
                         </a>
                     </div>
-                    <h2>
+                    <h3>
                         <a href=${project.link}>${project.title}</a>
-                    </h2>
+                    </h3>
                     <p>${project.desc}</p>
                   </div>
                 </div>
                 <div class="right">
-                    <img src=${project.img} alt=${project.desc} loading="lazy"/>
+                    <img src=${project.img} alt=${project.desc}/>
                 </div>
               </div>
             </div>
@@ -145,8 +145,8 @@ function addIllosToDOM() {
     for (const illo of ILLOS) {
         const illoStr = `
             <div class="illo-item ${illo.id}">
-                <img src=${illo.img} alt=${illo.desc} loading="lazy">
-                <div class="image-title"><h2>${illo.title}</h2></div>
+                <img src=${illo.img} alt=${illo.desc}>
+                <div class="image-title"><h3>${illo.title}</h3></div>
             </div>
         `;
         grid.innerHTML += illoStr;
